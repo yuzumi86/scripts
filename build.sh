@@ -15,6 +15,8 @@ rm -rf prebuilts/clang/host/linux-x86/clang-r450784d
 git clone https://gitlab.com/ImSurajxD/clang-r450784d -b master prebuilts/clang/host/linux-x86/clang-r450784d
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 export ALLOW_MISSING_DEPENDENCIES=true
+export BUILD_USERNAME=ismasrull 
+export BUILD_HOSTNAME=TRIDENT
 export TZ=Asia/Jakarta
 
 # Set up the build environment
