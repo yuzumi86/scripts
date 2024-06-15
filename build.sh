@@ -19,8 +19,8 @@ git clone --depth=1 https://github.com/eun0115/vendor_oplus_even-ims -b twelve-r
 /opt/crave/resync.sh
 
 #Extra
-rm -rf prebuilts/clang/host/linux-x86/clang-r450784d
-git clone https://gitlab.com/ImSurajxD/clang-r450784d -b master prebuilts/clang/host/linux-x86/clang-r450784d
+rm -rf prebuilts/clang/host/linux-x86/clang-r510928
+git clone https://gitlab.com/clangsantoni/clang-r510928 -b main prebuilts/clang/host/linux-x86/clang-r510928
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 export ALLOW_MISSING_DEPENDENCIES=true
 export BUILD_USERNAME=ismasrull 
