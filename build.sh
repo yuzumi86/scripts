@@ -23,7 +23,7 @@ export TZ=Asia/Jakarta
 
 # Set up the build environment
 source build/envsetup.sh
-repo forall -c 'git lfs install && git lfs pull && git lfs checkout'
+# repo forall -c 'git lfs install && git lfs pull && git lfs checkout'
 
 # Lunch for even device
 lunch cipher_even-userdebug
