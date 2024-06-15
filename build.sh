@@ -14,13 +14,12 @@ rm -rf packages/apps/RealmeParts
 git clone --depth=1 https://github.com/Realme-C25-Series-Development/android_packages_apps_RealmeParts -b aosp12 ./packages/apps/RealmeParts
 rm -rf vendor/realme/even-ims
 git clone --depth=1 https://github.com/eun0115/vendor_oplus_even-ims -b twelve-rmui2 ./vendor/realme/even-ims
+rm -rf prebuilt/clang/zycClang
+git clone --git-lfs --depth=1 https://gitlab.com/clangsantoni/zyc_clang -b 14 ./prebuilt/clang/zycClang
 
 # Sync the repositories
 /opt/crave/resync.sh
 
-#Extra
-rm -rf prebuilts/clang/host/linux-x86/clang-r510928
-git clone https://gitlab.com/clangsantoni/clang-r510928 -b main prebuilts/clang/host/linux-x86/clang-r510928
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 export ALLOW_MISSING_DEPENDENCIES=true
 export BUILD_USERNAME=ismasrull 
