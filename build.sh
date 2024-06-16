@@ -1,3 +1,5 @@
+sudo apt install git-lfs
+git lfs install
 # Remove local_manifests directory
 rm -rf .repo/local_manifests
 git clone --depth=1 https://github.com/yuzumi86/local_manifest -b main .repo/local_manifests
@@ -18,7 +20,7 @@ export TZ=Asia/Jakarta
 
 # Set up the build environment
 source build/envsetup.sh
-# repo forall -c 'git lfs install && git lfs pull && git lfs checkout'
+repo forall -c 'git lfs install && git lfs pull && git lfs checkout'
 
 # Lunch for even device
 lunch cipher_even-userdebug
