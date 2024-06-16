@@ -5,13 +5,8 @@ git clone --depth=1 https://github.com/yuzumi86/local_manifest -b main .repo/loc
 repo init -u https://github.com/CipherOS/android_manifest.git -b twelve-L
 
 # Clone the manifest repository
-rm -rf device/realme/even
-git clone https://github.com/yuzumi86/device_realme_even --depth 1 -b master ./device/realme/even
 rm -rf kernel/realme/even
 git clone --recurse-submodules --depth=1 https://github.com/yuzumi86/kernel_realme_even -b OSS-KSU-R ./kernel/realme/even
-rm -rf vendor/realme/even
-git clone --depth=1 https://github.com/cumaRull/vendor_realme_even -b rmui2 ./vendor/realme/even
-
 # Sync the repositories
 /opt/crave/resync.sh
 
