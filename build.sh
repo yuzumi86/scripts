@@ -5,7 +5,7 @@ rm -rf .repo/local_manifests
 git clone --depth=1 https://github.com/yuzumi86/local_manifest -b main .repo/local_manifests
 
 # Clone the source
-repo init -u https://github.com/ArcaneOS/Arcane_manifest -b R
+repo init -u https://github.com/LineageOS/android.git -b lineage-18.1 --git-lfs
 
 # Clone the manifest repository
 rm -rf kernel/realme/even
@@ -24,7 +24,7 @@ source build/envsetup.sh
 repo forall -c 'git lfs install && git lfs pull && git lfs checkout'
 
 # Lunch for even device
-lunch aosp_even-userdebug
+lunch lineage_even-userdebug
 
 # Build for even device
 mka bacon
