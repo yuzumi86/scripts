@@ -3,8 +3,9 @@ git lfs install
 # Remove local_manifests directory
 rm -rf .repo/local_manifests
 git clone --depth=1 https://github.com/yuzumi86/local_manifest -b main .repo/local_manifests
+
 # Clone the source
-repo init -u https://github.com/CipherOS/android_manifest.git -b twelve-L
+repo init -u https://github.com/ArcaneOS/Arcane_manifest -b R
 
 # Clone the manifest repository
 rm -rf kernel/realme/even
@@ -23,7 +24,7 @@ source build/envsetup.sh
 repo forall -c 'git lfs install && git lfs pull && git lfs checkout'
 
 # Lunch for even device
-lunch cipher_even-userdebug
+lunch aosp_even-userdebug
 
 # Build for even device
 mka bacon
